@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sYW-gZ-PUP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transfers-->
+        <scene sceneID="z1o-F6-Tgk">
+            <objects>
+                <viewController title="Transfers" id="Z9o-QH-0Z6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2SP-fH-Jk3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="14i-zn-NJo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transfer" image="arrow.right.arrow.left" catalog="system" id="gRd-T6-pOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgi-aT-sf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1262" y="694"/>
+        </scene>
+        <!--Deposit-->
+        <scene sceneID="Bzg-GZ-IlR">
+            <objects>
+                <viewController id="3ri-vo-aDL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BaC-9O-ogv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WAX-GS-gN2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Deposit" image="square.and.arrow.down" catalog="system" id="S9T-lg-nmX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKN-QT-4NW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-554" y="694"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="80t-Cu-z8X">
+            <objects>
+                <viewController id="ozg-UE-nWq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ag3-hB-fdm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LcU-pk-f30"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="5Ys-No-zHy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ipf-ke-ljV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="694"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="StD-sb-eiQ">
+            <objects>
+                <tabBarController id="sYW-gZ-PUP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="40E-Xh-j4a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="f8c-dp-Hy9" kind="relationship" relationship="viewControllers" id="SKf-re-Ppy"/>
+                        <segue destination="Z9o-QH-0Z6" kind="relationship" relationship="viewControllers" id="I6Q-ij-zP7"/>
+                        <segue destination="3ri-vo-aDL" kind="relationship" relationship="viewControllers" id="bnx-FY-cHC"/>
+                        <segue destination="ozg-UE-nWq" kind="relationship" relationship="viewControllers" id="MPq-Lp-Vi2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o61-L7-skg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-906" y="5"/>
+        </scene>
+        <!--Accounts-->
+        <scene sceneID="XZX-Re-fpN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Accounts" id="f8c-dp-Hy9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pmO-wH-XyM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIP-yk-fGl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1959" y="694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z9o-QH-0Z6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transfers-->
+        <scene sceneID="z1o-F6-Tgk">
+            <objects>
+                <viewController title="Transfers" id="Z9o-QH-0Z6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2SP-fH-Jk3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="14i-zn-NJo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Transfer" image="arrow.right.arrow.left" catalog="system" id="gRd-T6-pOT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgi-aT-sf0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1262" y="694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
+    </resources>
+</document>

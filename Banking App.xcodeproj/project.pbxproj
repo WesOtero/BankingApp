@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		2E4675D5248422A600B01046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675D4248422A600B01046 /* AppDelegate.swift */; };
 		2E4675D7248422A600B01046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675D6248422A600B01046 /* SceneDelegate.swift */; };
-		2E4675D9248422A600B01046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675D8248422A600B01046 /* ViewController.swift */; };
 		2E4675DC248422A600B01046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4675DA248422A600B01046 /* Main.storyboard */; };
 		2E4675DE248422A800B01046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4675DD248422A800B01046 /* Assets.xcassets */; };
 		2E4675E1248422A800B01046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4675DF248422A800B01046 /* LaunchScreen.storyboard */; };
 		2E4675EC248422A800B01046 /* Banking_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675EB248422A800B01046 /* Banking_AppTests.swift */; };
 		2E4675F7248422A800B01046 /* Banking_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675F6248422A800B01046 /* Banking_AppUITests.swift */; };
+		2E4676092484295200B01046 /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4676072484295200B01046 /* Accounts.storyboard */; };
+		2E46760B2484297300B01046 /* Transfers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E46760A2484297300B01046 /* Transfers.storyboard */; };
+		2E46760E2484298C00B01046 /* Deposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E46760C2484298C00B01046 /* Deposit.storyboard */; };
+		2E4676102484299F00B01046 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E46760F2484299F00B01046 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 		2E4675D1248422A600B01046 /* Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4675D4248422A600B01046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4675D6248422A600B01046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E4675D8248422A600B01046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E4675DB248422A600B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E4675DD248422A800B01046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E4675E0248422A800B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		2E4675F2248422A800B01046 /* Banking AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banking AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4675F6248422A800B01046 /* Banking_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_AppUITests.swift; sourceTree = "<group>"; };
 		2E4675F8248422A800B01046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E4676082484295200B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Accounts.storyboard"; sourceTree = "<group>"; };
+		2E46760A2484297300B01046 /* Transfers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transfers.storyboard; sourceTree = "<group>"; };
+		2E46760D2484298C00B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Deposit.storyboard"; sourceTree = "<group>"; };
+		2E46760F2484299F00B01046 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,10 @@
 		2E4675D3248422A600B01046 /* Banking App */ = {
 			isa = PBXGroup;
 			children = (
+				2E4676042484262600B01046 /* Screens */,
 				2E4675D4248422A600B01046 /* AppDelegate.swift */,
 				2E4675D6248422A600B01046 /* SceneDelegate.swift */,
-				2E4675D8248422A600B01046 /* ViewController.swift */,
-				2E4675DA248422A600B01046 /* Main.storyboard */,
 				2E4675DD248422A800B01046 /* Assets.xcassets */,
-				2E4675DF248422A800B01046 /* LaunchScreen.storyboard */,
 				2E4675E2248422A800B01046 /* Info.plist */,
 			);
 			path = "Banking App";
@@ -126,6 +130,35 @@
 				2E4675F8248422A800B01046 /* Info.plist */,
 			);
 			path = "Banking AppUITests";
+			sourceTree = "<group>";
+		};
+		2E4676042484262600B01046 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2E4676062484263600B01046 /* ViewControllers */,
+				2E4676052484262F00B01046 /* Storyboards */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2E4676052484262F00B01046 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E4675DF248422A800B01046 /* LaunchScreen.storyboard */,
+				2E4675DA248422A600B01046 /* Main.storyboard */,
+				2E4676072484295200B01046 /* Accounts.storyboard */,
+				2E46760A2484297300B01046 /* Transfers.storyboard */,
+				2E46760C2484298C00B01046 /* Deposit.storyboard */,
+				2E46760F2484299F00B01046 /* Settings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E4676062484263600B01046 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +267,11 @@
 			files = (
 				2E4675E1248422A800B01046 /* LaunchScreen.storyboard in Resources */,
 				2E4675DE248422A800B01046 /* Assets.xcassets in Resources */,
+				2E4676092484295200B01046 /* Accounts.storyboard in Resources */,
+				2E46760E2484298C00B01046 /* Deposit.storyboard in Resources */,
 				2E4675DC248422A600B01046 /* Main.storyboard in Resources */,
+				2E46760B2484297300B01046 /* Transfers.storyboard in Resources */,
+				2E4676102484299F00B01046 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4675D9248422A600B01046 /* ViewController.swift in Sources */,
 				2E4675D5248422A600B01046 /* AppDelegate.swift in Sources */,
 				2E4675D7248422A600B01046 /* SceneDelegate.swift in Sources */,
 			);
@@ -311,6 +347,22 @@
 				2E4675E0248422A800B01046 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E4676072484295200B01046 /* Accounts.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E4676082484295200B01046 /* Base */,
+			);
+			name = Accounts.storyboard;
+			sourceTree = "<group>";
+		};
+		2E46760C2484298C00B01046 /* Deposit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E46760D2484298C00B01046 /* Base */,
+			);
+			name = Deposit.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -444,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.wesleyotero.Banking-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.wesleyotero.Banking-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

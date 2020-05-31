@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqS-5D-ICf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accounts-->
+        <scene sceneID="qCe-Rb-Y3c">
+            <objects>
+                <viewController id="tqS-5D-ICf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XkB-9u-0ir">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pKa-pz-Nxu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Accounts" image="dollarsign.square" catalog="system" id="Nko-v7-6fP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dp-h4-Sln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1959" y="694"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign.square" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
