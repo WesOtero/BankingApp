@@ -1,0 +1,5 @@
+#File System Files
+.DS_Store
+
+#Xcode files
+UserInterfaceState.xcuserstate
