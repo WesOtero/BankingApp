@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C4h-Vs-jjT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="oVf-Ah-gIF">
+            <objects>
+                <viewController id="C4h-Vs-jjT" customClass="LoginVC" customModule="Banking_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbH-Tv-FaY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ky2-os-EuF">
+                                <rect key="frame" x="50" y="538.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSO-27-RCi">
+                                <rect key="frame" x="50" y="592.5" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5jT-uj-eVb"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="C4h-Vs-jjT" eventType="touchUpInside" id="3wf-gA-oex"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamond Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-ma-63y">
+                                <rect key="frame" x="100.5" y="367.5" width="213" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banking Reimagined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtN-m7-Gk6">
+                                <rect key="frame" x="129.5" y="413.5" width="155.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Mfu-p4-pQ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_logo" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-mn-PN6">
+                                <rect key="frame" x="157" y="257.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="R8f-90-sE5"/>
+                                    <constraint firstAttribute="width" constant="100" id="dc6-2k-EjE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UtN-m7-Gk6" firstAttribute="top" secondItem="ccS-ma-63y" secondAttribute="bottom" constant="5" id="4QI-ru-LZo"/>
+                            <constraint firstItem="n1G-mn-PN6" firstAttribute="centerX" secondItem="qbH-Tv-FaY" secondAttribute="centerX" id="5Kp-YO-kLw"/>
+                            <constraint firstItem="ky2-os-EuF" firstAttribute="top" secondItem="UtN-m7-Gk6" secondAttribute="bottom" constant="100" id="5LK-v3-nWX"/>
+                            <constraint firstItem="ccS-ma-63y" firstAttribute="centerX" secondItem="qbH-Tv-FaY" secondAttribute="centerX" id="GtE-sH-jbq"/>
+                            <constraint firstItem="iWb-gN-Kr4" firstAttribute="trailing" secondItem="OSO-27-RCi" secondAttribute="trailing" constant="50" id="M7F-Z3-FDt"/>
+                            <constraint firstItem="OSO-27-RCi" firstAttribute="leading" secondItem="iWb-gN-Kr4" secondAttribute="leading" constant="50" id="MUm-kq-7Th"/>
+                            <constraint firstItem="UtN-m7-Gk6" firstAttribute="centerX" secondItem="qbH-Tv-FaY" secondAttribute="centerX" id="Ynj-ei-gxL"/>
+                            <constraint firstItem="ccS-ma-63y" firstAttribute="top" secondItem="n1G-mn-PN6" secondAttribute="bottom" constant="10" id="bwh-9s-KUl"/>
+                            <constraint firstItem="iWb-gN-Kr4" firstAttribute="trailing" secondItem="ky2-os-EuF" secondAttribute="trailing" constant="50" id="hkj-gh-mik"/>
+                            <constraint firstItem="ky2-os-EuF" firstAttribute="leading" secondItem="iWb-gN-Kr4" secondAttribute="leading" constant="50" id="kbl-a3-ATn"/>
+                            <constraint firstItem="ccS-ma-63y" firstAttribute="centerY" secondItem="qbH-Tv-FaY" secondAttribute="centerY" constant="-60" id="mEH-VI-7OY"/>
+                            <constraint firstItem="OSO-27-RCi" firstAttribute="top" secondItem="ky2-os-EuF" secondAttribute="bottom" constant="20" id="v98-bi-Abt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iWb-gN-Kr4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsI-Kl-VKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bank_logo" width="96" height="96"/>
+    </resources>
+</document>

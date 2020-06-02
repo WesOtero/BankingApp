@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z9o-QH-0Z6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,9 +12,25 @@
             <objects>
                 <viewController title="Transfers" id="Z9o-QH-0Z6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2SP-fH-Jk3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5VG-vF-XF4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <items>
+                                    <navigationItem title="Transfers" id="K2h-yw-NPG">
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="S4p-WU-CUc"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5VG-vF-XF4" firstAttribute="leading" secondItem="14i-zn-NJo" secondAttribute="leading" id="C1Y-ue-f50"/>
+                            <constraint firstItem="5VG-vF-XF4" firstAttribute="top" secondItem="14i-zn-NJo" secondAttribute="top" id="TYP-HI-gr2"/>
+                            <constraint firstItem="5VG-vF-XF4" firstAttribute="trailing" secondItem="14i-zn-NJo" secondAttribute="trailing" id="fBo-vG-iIG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="14i-zn-NJo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Transfer" image="arrow.right.arrow.left" catalog="system" id="gRd-T6-pOT"/>

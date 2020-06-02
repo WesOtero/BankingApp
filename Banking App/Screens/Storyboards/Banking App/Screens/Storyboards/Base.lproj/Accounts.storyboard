@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tqS-5D-ICf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -9,14 +10,121 @@
         <!--Accounts-->
         <scene sceneID="qCe-Rb-Y3c">
             <objects>
-                <viewController id="tqS-5D-ICf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tqS-5D-ICf" customClass="AccountsVC" customModule="Banking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XkB-9u-0ir">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="op3-Jy-loB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <items>
+                                    <navigationItem title="Accounts" id="wxh-T9-8KV">
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="lBR-Eq-WNe"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1gG-ue-1xz">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Account" rowHeight="200" id="eRJ-9s-Xl7" customClass="AccountTableViewCell" customModule="Banking_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eRJ-9s-Xl7" id="sGC-yV-h1e">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHN-N8-Uge">
+                                                    <rect key="frame" x="25" y="16" width="364" height="33.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="zTd-v1-vMb">
+                                                    <rect key="frame" x="88" y="100" width="58.5" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rly-Xd-vpr">
+                                                            <rect key="frame" x="0.0" y="0.0" width="58.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmN-AL-1XH">
+                                                            <rect key="frame" x="6.5" y="43.5" width="45" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="jNb-8Z-VFp">
+                                                    <rect key="frame" x="263.5" y="100" width="67.5" height="64"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeQ-0x-HDd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="67.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-Rq-2my">
+                                                            <rect key="frame" x="11" y="43.5" width="45" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEd-KW-fDz">
+                                                    <rect key="frame" x="25" y="54.5" width="364" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="gHN-N8-Uge" secondAttribute="trailing" constant="5" id="Gby-bR-YxE"/>
+                                                <constraint firstItem="OEd-KW-fDz" firstAttribute="top" secondItem="gHN-N8-Uge" secondAttribute="bottom" constant="5" id="Oki-PT-VXy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="zTd-v1-vMb" secondAttribute="bottom" constant="25" id="W1R-Ml-8Rc"/>
+                                                <constraint firstItem="zTd-v1-vMb" firstAttribute="centerX" secondItem="sGC-yV-h1e" secondAttribute="centerX" constant="-90" id="YEs-SO-cqU"/>
+                                                <constraint firstItem="gHN-N8-Uge" firstAttribute="leading" secondItem="sGC-yV-h1e" secondAttribute="leadingMargin" constant="5" id="YXI-9k-jIc"/>
+                                                <constraint firstItem="jNb-8Z-VFp" firstAttribute="centerX" secondItem="sGC-yV-h1e" secondAttribute="centerX" constant="90" id="dWS-HE-aZ8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jNb-8Z-VFp" secondAttribute="bottom" constant="25" id="h5j-x5-67U"/>
+                                                <constraint firstItem="OEd-KW-fDz" firstAttribute="leading" secondItem="sGC-yV-h1e" secondAttribute="leadingMargin" constant="5" id="jyS-sz-lup"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="OEd-KW-fDz" secondAttribute="trailing" constant="5" id="knk-oe-DVR"/>
+                                                <constraint firstItem="gHN-N8-Uge" firstAttribute="top" secondItem="sGC-yV-h1e" secondAttribute="topMargin" constant="5" id="s7v-J6-chU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountName" destination="gHN-N8-Uge" id="EXg-f8-mDp"/>
+                                            <outlet property="accountNumberShort" destination="OEd-KW-fDz" id="VF3-93-6LF"/>
+                                            <outlet property="availableBalance" destination="gIx-Rq-2my" id="7vM-KX-lGX"/>
+                                            <outlet property="currentBalance" destination="kmN-AL-1XH" id="QG7-gL-coF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="tqS-5D-ICf" id="Csy-Ig-uD5"/>
+                                    <outlet property="delegate" destination="tqS-5D-ICf" id="3MY-hO-gvj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="op3-Jy-loB" firstAttribute="top" secondItem="pKa-pz-Nxu" secondAttribute="top" id="51e-Me-Dao"/>
+                            <constraint firstItem="pKa-pz-Nxu" firstAttribute="bottom" secondItem="1gG-ue-1xz" secondAttribute="bottom" id="J4b-Ed-afV"/>
+                            <constraint firstItem="pKa-pz-Nxu" firstAttribute="trailing" secondItem="1gG-ue-1xz" secondAttribute="trailing" id="Pmw-d7-ky1"/>
+                            <constraint firstItem="op3-Jy-loB" firstAttribute="trailing" secondItem="pKa-pz-Nxu" secondAttribute="trailing" id="QNf-6t-51K"/>
+                            <constraint firstItem="op3-Jy-loB" firstAttribute="leading" secondItem="pKa-pz-Nxu" secondAttribute="leading" id="T1m-Hs-7bt"/>
+                            <constraint firstItem="1gG-ue-1xz" firstAttribute="leading" secondItem="pKa-pz-Nxu" secondAttribute="leading" id="Zpe-0B-sa5"/>
+                            <constraint firstItem="1gG-ue-1xz" firstAttribute="top" secondItem="op3-Jy-loB" secondAttribute="bottom" id="cr3-pm-aQ7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pKa-pz-Nxu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Accounts" image="dollarsign.square" catalog="system" id="Nko-v7-6fP"/>
+                    <connections>
+                        <outlet property="tableView" destination="1gG-ue-1xz" id="UHd-xd-iTU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8dp-h4-Sln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3ri-vo-aDL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,9 +12,25 @@
             <objects>
                 <viewController id="3ri-vo-aDL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BaC-9O-ogv">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N8T-OJ-LEZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <items>
+                                    <navigationItem title="Deposit" id="UpO-U3-GUh">
+                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="ETj-UM-86E"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N8T-OJ-LEZ" firstAttribute="top" secondItem="WAX-GS-gN2" secondAttribute="top" id="Xe5-Ki-jqF"/>
+                            <constraint firstItem="N8T-OJ-LEZ" firstAttribute="trailing" secondItem="WAX-GS-gN2" secondAttribute="trailing" id="iTh-OP-irz"/>
+                            <constraint firstItem="N8T-OJ-LEZ" firstAttribute="leading" secondItem="WAX-GS-gN2" secondAttribute="leading" id="zm3-fW-gj8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WAX-GS-gN2"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Deposit" image="square.and.arrow.down" catalog="system" id="S9T-lg-nmX"/>
