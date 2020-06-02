@@ -16,13 +16,14 @@
 		2E4676092484295200B01046 /* Accounts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4676072484295200B01046 /* Accounts.storyboard */; };
 		2E46760B2484297300B01046 /* Transfers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E46760A2484297300B01046 /* Transfers.storyboard */; };
 		2E46760E2484298C00B01046 /* Deposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E46760C2484298C00B01046 /* Deposit.storyboard */; };
-		2E46761324842E9500B01046 /* DatabaseConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46761224842E9500B01046 /* DatabaseConnectionManager.swift */; };
+		2E46761324842E9500B01046 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46761224842E9500B01046 /* DatabaseManager.swift */; };
 		2E4676152484C04900B01046 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4676142484C04900B01046 /* Login.storyboard */; };
 		2E4CE8832485D0E200128817 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CE8822485D0E200128817 /* LoginVC.swift */; };
 		2E4CE8852485E0AF00128817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CE8842485E0AF00128817 /* Assets.xcassets */; };
 		2E4CE8882485E7B900128817 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CE8862485E7B900128817 /* Settings.storyboard */; };
 		2E4CE88A2485F0D500128817 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CE8892485F0D500128817 /* AccountsVC.swift */; };
 		2E4CE88E2486001900128817 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CE88D2486001900128817 /* AccountTableViewCell.swift */; };
+		2EED0A472486F1A2001FBF73 /* SQLQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EED0A462486F1A2001FBF73 /* SQLQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +59,14 @@
 		2E4676082484295200B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Accounts.storyboard"; sourceTree = "<group>"; };
 		2E46760A2484297300B01046 /* Transfers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transfers.storyboard; sourceTree = "<group>"; };
 		2E46760D2484298C00B01046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Deposit.storyboard"; sourceTree = "<group>"; };
-		2E46761224842E9500B01046 /* DatabaseConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseConnectionManager.swift; sourceTree = "<group>"; };
+		2E46761224842E9500B01046 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		2E4676142484C04900B01046 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2E4CE8822485D0E200128817 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2E4CE8842485E0AF00128817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E4CE8872485E7B900128817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
 		2E4CE8892485F0D500128817 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
 		2E4CE88D2486001900128817 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		2EED0A462486F1A2001FBF73 /* SQLQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +181,8 @@
 		2E46761124842E5500B01046 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				2E46761224842E9500B01046 /* DatabaseConnectionManager.swift */,
+				2E46761224842E9500B01046 /* DatabaseManager.swift */,
+				2EED0A452486F188001FBF73 /* SQL Queries */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -198,6 +201,14 @@
 				2E4CE88D2486001900128817 /* AccountTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2EED0A452486F188001FBF73 /* SQL Queries */ = {
+			isa = PBXGroup;
+			children = (
+				2EED0A462486F1A2001FBF73 /* SQLQuery.swift */,
+			);
+			path = "SQL Queries";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +349,8 @@
 			files = (
 				2E4CE88A2485F0D500128817 /* AccountsVC.swift in Sources */,
 				2E4675D5248422A600B01046 /* AppDelegate.swift in Sources */,
-				2E46761324842E9500B01046 /* DatabaseConnectionManager.swift in Sources */,
+				2E46761324842E9500B01046 /* DatabaseManager.swift in Sources */,
+				2EED0A472486F1A2001FBF73 /* SQLQuery.swift in Sources */,
 				2E4CE88E2486001900128817 /* AccountTableViewCell.swift in Sources */,
 				2E4CE8832485D0E200128817 /* LoginVC.swift in Sources */,
 				2E4675D7248422A600B01046 /* SceneDelegate.swift in Sources */,

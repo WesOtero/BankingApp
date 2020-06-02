@@ -12,6 +12,9 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        DatabaseManager.createTable()
+        DatabaseManager.insert()
         
     }
     

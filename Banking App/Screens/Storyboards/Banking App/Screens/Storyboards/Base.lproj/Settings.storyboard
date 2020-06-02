@@ -102,14 +102,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4m-M3-Vt6">
-                                                    <rect key="frame" x="20" y="11" width="54" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gp-wC-kh1">
+                                                    <rect key="frame" x="20" y="7" width="374" height="30"/>
+                                                    <state key="normal" title="Logout"/>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0gp-wC-kh1" firstAttribute="leading" secondItem="wBu-k1-gJb" secondAttribute="leading" constant="20" id="Gxq-8M-BhQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="0gp-wC-kh1" secondAttribute="trailing" constant="20" id="dp8-F5-jhn"/>
+                                                <constraint firstItem="0gp-wC-kh1" firstAttribute="centerY" secondItem="wBu-k1-gJb" secondAttribute="centerY" id="tbC-Qh-GnR"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
