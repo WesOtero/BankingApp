@@ -19,16 +19,48 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                                 <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <items>
-                                    <navigationItem title="Deposit" id="UpO-U3-GUh">
-                                        <barButtonItem key="rightBarButtonItem" title="Logout" id="ETj-UM-86E"/>
-                                    </navigationItem>
+                                    <navigationItem title="Deposit" id="UpO-U3-GUh"/>
                                 </items>
                             </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b3h-Az-Kyv">
+                                <rect key="frame" x="0.0" y="155" width="414" height="83"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tv9-cd-4fI">
+                                        <rect key="frame" x="15" y="0.0" width="384" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w9i-ov-Q6b">
+                                        <rect key="frame" x="15" y="49" width="384" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="w9i-ov-Q6b" firstAttribute="leading" secondItem="b3h-Az-Kyv" secondAttribute="leading" constant="15" id="0Ln-o9-Jbr"/>
+                                    <constraint firstItem="tv9-cd-4fI" firstAttribute="leading" secondItem="b3h-Az-Kyv" secondAttribute="leading" constant="15" id="1Zh-kF-Rkt"/>
+                                    <constraint firstAttribute="trailing" secondItem="tv9-cd-4fI" secondAttribute="trailing" constant="15" id="8jg-sJ-ssf"/>
+                                    <constraint firstAttribute="trailing" secondItem="w9i-ov-Q6b" secondAttribute="trailing" constant="15" id="oyh-wb-fo4"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlE-Sc-RIb">
+                                <rect key="frame" x="15" y="263" width="384" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BhD-Xv-GT6"/>
+                                </constraints>
+                                <state key="normal" title="Deposit Check"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="OlE-Sc-RIb" firstAttribute="leading" secondItem="WAX-GS-gN2" secondAttribute="leading" constant="15" id="Aqn-cJ-Ezc"/>
+                            <constraint firstItem="b3h-Az-Kyv" firstAttribute="top" secondItem="N8T-OJ-LEZ" secondAttribute="bottom" constant="15" id="LKS-kY-E5d"/>
+                            <constraint firstItem="WAX-GS-gN2" firstAttribute="trailing" secondItem="b3h-Az-Kyv" secondAttribute="trailing" id="NuV-zw-NOE"/>
                             <constraint firstItem="N8T-OJ-LEZ" firstAttribute="top" secondItem="WAX-GS-gN2" secondAttribute="top" id="Xe5-Ki-jqF"/>
+                            <constraint firstItem="WAX-GS-gN2" firstAttribute="trailing" secondItem="OlE-Sc-RIb" secondAttribute="trailing" constant="15" id="ZtU-Gj-4b8"/>
                             <constraint firstItem="N8T-OJ-LEZ" firstAttribute="trailing" secondItem="WAX-GS-gN2" secondAttribute="trailing" id="iTh-OP-irz"/>
+                            <constraint firstItem="b3h-Az-Kyv" firstAttribute="leading" secondItem="WAX-GS-gN2" secondAttribute="leading" id="iWr-5H-tBl"/>
+                            <constraint firstItem="OlE-Sc-RIb" firstAttribute="top" secondItem="b3h-Az-Kyv" secondAttribute="bottom" constant="25" id="yvC-C1-Qxb"/>
                             <constraint firstItem="N8T-OJ-LEZ" firstAttribute="leading" secondItem="WAX-GS-gN2" secondAttribute="leading" id="zm3-fW-gj8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WAX-GS-gN2"/>
@@ -37,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKN-QT-4NW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="694"/>
+            <point key="canvasLocation" x="-555.07246376811599" y="693.75"/>
         </scene>
     </scenes>
     <resources>
