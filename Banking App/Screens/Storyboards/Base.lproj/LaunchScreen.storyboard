@@ -22,7 +22,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banking Reimagined" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zf-3m-MEK">
-                                <rect key="frame" x="129.5" y="418.5" width="155.5" height="21"/>
+                                <rect key="frame" x="129.5" y="413.5" width="155.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                             <constraint firstItem="5zf-3m-MEK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Vk-8W-Apz"/>
                             <constraint firstItem="fmT-3U-Pxj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DZ3-HH-hWo"/>
                             <constraint firstItem="fmT-3U-Pxj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-60" id="UJr-5d-ERv"/>
-                            <constraint firstItem="5zf-3m-MEK" firstAttribute="top" secondItem="fmT-3U-Pxj" secondAttribute="bottom" constant="10" id="ajD-1l-e1f"/>
+                            <constraint firstItem="5zf-3m-MEK" firstAttribute="top" secondItem="fmT-3U-Pxj" secondAttribute="bottom" constant="5" id="ajD-1l-e1f"/>
                             <constraint firstItem="NmT-DG-IyT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="u1X-T7-10z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1C2BD724873F2B0074A957 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C2BD624873F2B0074A957 /* SignUpVC.swift */; };
+		2E1C2BDA24875A3E0074A957 /* DatabseOperationsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C2BD924875A3E0074A957 /* DatabseOperationsTest.swift */; };
 		2E4675D5248422A600B01046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675D4248422A600B01046 /* AppDelegate.swift */; };
 		2E4675D7248422A600B01046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4675D6248422A600B01046 /* SceneDelegate.swift */; };
 		2E4675DC248422A600B01046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4675DA248422A600B01046 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		2E4CE8882485E7B900128817 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E4CE8862485E7B900128817 /* Settings.storyboard */; };
 		2E4CE88A2485F0D500128817 /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CE8892485F0D500128817 /* AccountsVC.swift */; };
 		2E4CE88E2486001900128817 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CE88D2486001900128817 /* AccountTableViewCell.swift */; };
+		2E51D53F24875C3600C267EF /* UserDatabaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E51D53E24875C3600C267EF /* UserDatabaseOperation.swift */; };
+		2E51D542248768E800C267EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E51D541248768E800C267EF /* User.swift */; };
 		2EED0A472486F1A2001FBF73 /* SQLQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EED0A462486F1A2001FBF73 /* SQLQuery.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E1C2BD624873F2B0074A957 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		2E1C2BD924875A3E0074A957 /* DatabseOperationsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabseOperationsTest.swift; sourceTree = "<group>"; };
 		2E4675D1248422A600B01046 /* Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E4675D4248422A600B01046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E4675D6248422A600B01046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,8 @@
 		2E4CE8872485E7B900128817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Banking App/Screens/Storyboards/Base.lproj/Settings.storyboard"; sourceTree = "<group>"; };
 		2E4CE8892485F0D500128817 /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
 		2E4CE88D2486001900128817 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		2E51D53E24875C3600C267EF /* UserDatabaseOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabaseOperation.swift; sourceTree = "<group>"; };
+		2E51D541248768E800C267EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2EED0A462486F1A2001FBF73 /* SQLQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +125,7 @@
 		2E4675D3248422A600B01046 /* Banking App */ = {
 			isa = PBXGroup;
 			children = (
+				2E51D54024875FE400C267EF /* DataModels */,
 				2E4CE88B2485FFAC00128817 /* UIElelemtns */,
 				2E46761124842E5500B01046 /* Managers */,
 				2E4676042484262600B01046 /* Screens */,
@@ -132,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4675EB248422A800B01046 /* Banking_AppTests.swift */,
+				2E1C2BD924875A3E0074A957 /* DatabseOperationsTest.swift */,
 				2E4675ED248422A800B01046 /* Info.plist */,
 			);
 			path = "Banking AppTests";
@@ -173,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				2E4CE8822485D0E200128817 /* LoginVC.swift */,
+				2E1C2BD624873F2B0074A957 /* SignUpVC.swift */,
 				2E4CE8892485F0D500128817 /* AccountsVC.swift */,
 			);
 			path = ViewControllers;
@@ -182,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				2E46761224842E9500B01046 /* DatabaseManager.swift */,
+				2E51D53E24875C3600C267EF /* UserDatabaseOperation.swift */,
 				2EED0A452486F188001FBF73 /* SQL Queries */,
 			);
 			path = Managers;
@@ -201,6 +213,14 @@
 				2E4CE88D2486001900128817 /* AccountTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		2E51D54024875FE400C267EF /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E51D541248768E800C267EF /* User.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 		2EED0A452486F188001FBF73 /* SQL Queries */ = {
@@ -347,12 +367,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1C2BD724873F2B0074A957 /* SignUpVC.swift in Sources */,
 				2E4CE88A2485F0D500128817 /* AccountsVC.swift in Sources */,
+				2E51D53F24875C3600C267EF /* UserDatabaseOperation.swift in Sources */,
 				2E4675D5248422A600B01046 /* AppDelegate.swift in Sources */,
 				2E46761324842E9500B01046 /* DatabaseManager.swift in Sources */,
 				2EED0A472486F1A2001FBF73 /* SQLQuery.swift in Sources */,
 				2E4CE88E2486001900128817 /* AccountTableViewCell.swift in Sources */,
 				2E4CE8832485D0E200128817 /* LoginVC.swift in Sources */,
+				2E51D542248768E800C267EF /* User.swift in Sources */,
 				2E4675D7248422A600B01046 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1C2BDA24875A3E0074A957 /* DatabseOperationsTest.swift in Sources */,
 				2E4675EC248422A800B01046 /* Banking_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
